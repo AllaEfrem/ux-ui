@@ -13,45 +13,47 @@
             border: 1px solid black;
         }
     </style>
+    <link rel="stylesheet" href="dz2.css">
 </head>
 
 <body>
-    <h1>Вакансия: Junior Frontend Developer</h1>
 
 
 
     <form>
+        <h1>Вакансия: Junior Frontend Developer</h1>
+
         <img src="фото.jpg" alt="Trulli" width="250">
 
-        <p style="width: 50%; display: inline-block;">
-            <span>Имя:</span>
+        <p class="name-and-link">
+            <span class="header">Имя:</span>
             <input type="text" name="Имя" placeholder="ФИО">
             <br>
 
             <a href="https://github.com/AllaEfrem/ux-ui" target="_blank">Ссылка на репозиторий в GitHub</a>
             <br>
 
-            <span>Опыт работы:</span>
+            <span class="header">Опыт работы:</span>
             <input type="text" name="Опыт работы" placeholder="Нет">
 
         </p>
         <br>
-        <span>Дата собеседывания:</span>
+        <span class="header">Дата собеседывания:</span>
         <input type="date">
 
         <br>
         <br>
 
-        <span>Уровень английского:</span>
+        <span class="header">Уровень английского:</span>
         <label><input type="radio" name="english_level" value="Плохо"> Плохо</label>
-        <input type="radio" name="english_level" value="Средне"> Средне
-        <input type="radio" name="english_level" value="Хорошо"> Хорошо
-        <input type="radio" name="english_level" value="ПРевосходно"> Превосходно
+        <label><input type="radio" name="english_level" value="Средне"> Средне</label>
+        <label><input type="radio" name="english_level" value="Хорошо"> Хорошо</label>
+        <label><input type="radio" name="english_level" value="ПРевосходно"> Превосходно</label>
 
         <br>
         <br>
 
-        <span>Ключевые навыки: </span>
+        <span class="header">Ключевые навыки: </span>
         <ul>
             <li>HTML</li>
             <li>CSS/LESS</li>
@@ -65,7 +67,7 @@
         <br>
         <br>
 
-        <span>Коммуникабельность:</span>
+        <span class="header">Коммуникабельность:</span>
         <select>
             <option value="херово">херово</option>
             <option value="норм">норм</option>
@@ -76,24 +78,27 @@
         <br>
         <br>
 
-        <span>Желаемая з/п:</span>
+        <span class="header">Желаемая з/п:</span>
         <input type="text" placeholder="Введите значение">
 
         <br>
         <br>
 
-        <span>Подходит по критериям:</span>
+        <span class="header">Подходит по критериям:</span>
         <br>
 
-        <label><input type="checkbox" name="criterion" value="Знание английского"> Знание английского</label><br>
+        <label>
+            <input type="checkbox" name="criterion" value="Знание английского"> 
+            Знание английского
+        </label><br>
         <label><input type="checkbox" name="criterion" value="Оклад"> Оклад</label><br>
         <label><input type="checkbox" name="criterion" value="Навыки"> Навыки</label><br>
         <label><input type="checkbox" name="criterion" value="Сразу видно, что свой человек"> Сразу видно, что свой
-        человек</label><br>
+            человек</label><br>
 
         <br>
 
-        <span>Образование, курсы и т.п.:</span>
+        <span class="header">Образование, курсы и т.п.:</span>
 
         <table>
             <thead>
