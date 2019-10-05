@@ -1,0 +1,54 @@
+.main-container {
+    width: 600px;
+    height: 600px;
+    background-color: lightskyblue;
+    
+}
+
+.row {
+    height: 50%;
+}
+
+.row:last-child {
+    background-color: moccasin;
+    display: flex;
+    border-top: 1px solid black;
+}
+
+.small-container{
+    flex-grow: 1;
+    width: 50%;
+}
+
+.small-container.right1 {
+    background-color: orange;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-left: 1px solid black;
+    
+}
+
+.target-div1 {
+    height: 50%;
+    width: 50%;
+    background-color: red;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.small-container.right2{
+    position: relative;
+    background-color: orange;
+    border-left: 1px solid black;
+}
+.target-div2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    width: 50%;
+    background-color: red;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
