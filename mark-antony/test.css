@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 530px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-screen .container {
+    position: relative;
+}
+
+.first-screen {
+    height: 900px;
+    position: relative;
+}
+
+.gradient-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #7A39DB, #6048FF);
+    opacity: 0.6;
+}
+
+
+.about-me {
+    position: absolute;
+    top: 310px;
+    right: 87px;
+}
+
+footer {
+    height: 473px;
+    background: linear-gradient(45deg, #7A39DB, #6048FF);
+}
