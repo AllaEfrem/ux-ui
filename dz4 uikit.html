@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./dz4 uikit.css">
+
     <link rel="stylesheet" href="./uikit.min.css" />
+    <link rel="stylesheet" href="./dz4 uikit.css">
 </head>
 
 <body>
@@ -73,7 +74,8 @@
         </div>
     </nav>
 
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+        uk-slideshow="autoplay: true; max-height: 600">
 
         <ul class="uk-slideshow-items">
             <li>
@@ -99,7 +101,7 @@
 
             <div class="uk-card uk-card-default uk-card-body">
                 <div>
-                    <p>КотокиШОП - это интеренет магазин, в уотором вы найдете только лучшие товары для ваших любимых
+                    <p>КотокиШОП - это интеренет магазин, в котором вы найдете только лучшие товары для ваших любимых
                         питомцев котиков. Мы стараемся найти индивидуальный подход к каждому клиенту и отвечаем за
                         качество всех наших товаров. Мы очень рады, что вы зашли к нам и ждем от вас заказов</p>
                 </div>
@@ -140,6 +142,12 @@
                         </div>
                     </div>
                     <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-text">Возраст питомца</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Возраст">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
                         <label class="uk-form-label" for="form-stacked-text">Номер телефона</label>
                         <div class="uk-form-controls">
                             <input class="uk-input" id="form-stacked-text" type="text" placeholder="+7(___)___-__-__">
@@ -157,7 +165,11 @@
         </div>
     </div>
 
-    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center cards-container uk-grid-match"
+        uk-grid>
+
+
+
         <div>
             <div class="uk-card uk-card-default uk-card-body">
                 <h3 class="uk-card-title">Высокое качество</h3>
@@ -165,18 +177,64 @@
             </div>
         </div>
         <div>
-            <div class="uk-card uk-card-primary uk-card-body">
+            <div class="uk-card uk-card-default uk-card-body">
                 <h3 class="uk-card-title">Быстрая доставка</h3>
                 <p>Свой склад и доставка товаров в кротчайшие сроки</p>
             </div>
         </div>
         <div>
-            <div class="uk-card uk-card-secondary uk-card-body">
+            <div class="uk-card uk-card-default uk-card-body">
                 <h3 class="uk-card-title">Индивидуальный подход</h3>
                 <p>Подберем индивидуальное меню и другие товары в соответствии породы и возраста вашего питомца</p>
             </div>
         </div>
+
     </div>
+
+    <ul uk-tab>
+        <li><a href="#">Котёнок до 1 года</a></li>
+        <li><a href="#">Взрослый 1-7 лет</a></li>
+        <li><a href="#">Котик старше 7 лет</a></li>
+    </ul>
+
+    <ul class="uk-switcher uk-margin">
+        <li>
+            <h3>Детство</h3>
+            Остановимся чуть подробнее на том, как развивается кошка в течение жизни — это поможет вам наиболее наглядно
+            сравнить возраст кошки и человека. В первый месяц жизни котята ведут себя как человеческие малыши в первые
+            годы: познают мир, неуклюже играют и боятся ступить и шагу без мамы. Подробнее о самом раннем возрасте котят
+            вы можете прочесть здесь. До 6 месяцев котята растут очень быстро, но все равно остаются детьми. Можно
+            сказать, что в полгода котенок — как ребенок 8-12 лет.
+
+            <h3>Юность</h3>
+            <span>После 6 месяцев начинается половое созревание — как пубертат у подростков. Конечно, котята не закатывают
+            скандалов своим «предкам» — аналогом их подросткового бунта можно назвать разве что более интенсивные игры и
+            шуточную борьбу. Тем не менее, к 1 году кошки уже способны производить потомство, хотя для здоровья самочкам
+            не рекомендуется беременеть до 1,5 лет. К двум годам кошки обучаются всему необходимому в жизни: основам
+            выживания, а также межполовым отношениям.</span>
+        </li>
+        <li>
+            <h3>Молодость</h3>
+            <span>Молодость кошки длится от 3 до 5 лет: она на пике своего развития, здорова и активна, может воспроизвести
+            здоровое потомство, и не раз. Это 20-40 человеческих лет.</span>
+        </li>
+        <li>
+            <h3>Зрелость</h3>
+            Зрелость длится с 7 по 10 годы жизни кошки, это 40-55 человеческих лет: мурлыка еще здорова, в ней есть
+            силы, но она уже преисполнена жизненной мудрости, реагирует на окружающую реальность более спокойно и
+            сдержанно.
+
+            <h3>«Пенсионный» возраст</h3>
+            В современном мире, с доступными ветеринарными услугами и возможностью сбалансированного питания,
+            длительность жизни кошки увеличиласть, и возраст 11-14 лет вполне позволяет кошке получать удовольствие от
+            жизни, как и людям 50-70 лет.
+
+            <h3>Старость</h3>
+            Кошки старше 15 лет уже относятся к разряду долгожителей — это 80-летние старички. В это время кошки
+            становятся более степенными, сильнее нуждаются в заботе хозяина, ласковы и верны ему как никогда. Если же вы
+            не знаете, сколько лет вашему питомцу, и ходите понять, как определить возраст кошки, прочтите эту статью.
+        </li>
+    </ul>
 
 
     <script src="./uikit.min.js"></script>
