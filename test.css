@@ -1,54 +1,258 @@
-.main-container {
-    width: 600px;
-    height: 600px;
-    background-color: lightskyblue;
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+   COMMON PROPERTY
+*/
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+button {
+    outline: none;
+}
+
+.green-button {
+    width: 170px;
+    height: 55px;
+    text-align: center;
+    line-height: 53px;
+    background-color: #A0D334;
+    color: white;
+    border: none;
+    font-size: 14px;
     
 }
 
-.row {
-    height: 50%;
+.green-button:hover {
+    background-color: #aedf48;
 }
 
-.row:last-child {
-    background-color: moccasin;
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4a4a4a;
+    margin: 0;
+
+}
+.services-about p {
+    color: #6e6e6e;
+    margin-top: 17px;
+    margin-bottom: 47px;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+/*
+   END OF COMMON PROPERTY
+*/
+
+
+
+/*
+   HEADER
+*/
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+header .container {
     display: flex;
-    border-top: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.small-container{
-    flex-grow: 1;
-    width: 50%;
-}
-
-.small-container.right1 {
-    background-color: orange;
+nav {
+    width: 530px;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    border-left: 1px solid black;
-    
+    justify-content: space-between;
 }
 
-.target-div1 {
-    height: 50%;
-    width: 50%;
-    background-color: red;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
+.nav-link {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
 }
 
-.small-container.right2{
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+
+
+.contact-me-btn {
+width: 170px;
+height: 55px;
+border: 1px solid white;
+background: transparent;
+text-align: center;
+line-height: 53px;
+font-size: 14px;
+color: white;
+transition: all .3s ease-in-out;
+}
+
+.contact-me-btn:hover {
+    background: rgba(255, 255, 255, .4);
+}
+
+/*
+   END OF HEADER
+*/
+
+/*
+   FIRST SCREEN
+*/
+
+.first-screen .container {
     position: relative;
-    background-color: orange;
-    border-left: 1px solid black;
 }
-.target-div2 {
+
+.first-screen {
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-back {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 50%;
-    width: 50%;
-    background-color: red;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #7A39DB, #6048FF);
+    opacity: 0.6;
+}
+
+.about-me {
+    position: absolute;
+    top: 310px;
+    right: 87px;
+}
+
+.about-me .common-text {
+    font-size: 20px;
+    color: white;
+    padding-left: 5px;
+}
+
+.Mark-Antony {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    line-height: 73px;
+    color: white;
+}
+
+.get-started-btn {
+    margin-top: 60px;
+    margin-left: 5px;
+}
+
+.first-section-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+
+}
+
+.rotated-back {
+    position: absolute;
+    bottom: -144px;
+    right: -20px;
+    transform: rotateZ(-7deg);
+    width: 113%;
+    background-color: white;
+    height: 220px;
+}
+
+/*
+   SERVICES SECTION
+*/
+
+.services-section {
+    padding-top: 33px;
+    padding-bottom: 71px;
+}
+
+.services-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services-about {
+    width: 365px;
+}
+
+.service-cards-container {
+    display: grid;
+    grid-template-columns: 338px 338px;
+    grid-template-rows: 175px 175px;
+    gap: 30px;
+}
+
+.service-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 30px rgba(172, 172, 172, .16);
+}
+
+
+
+.icon-and-title  {
+    display: flex;
+    align-items: center;
+}
+
+.icon-and-title .icon-container {
+    flex-shrink: 0;
+    width: 55px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #6e6e6e;
+    line-height: 27px;
+    padding-left: 55px;
+    margin: 0;
+}
+
+
+/*
+   END OF SERVICES SECTION
+*/
+
+/*
+   END OF FIRST SCREEN
+*/
+
+footer {
+    height: 473px;
+    background: linear-gradient(45deg, #7A39DB, #6048FF);
+}
+
+.Mark_Antony {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
 }
