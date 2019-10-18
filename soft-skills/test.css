@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+}
+
+
+/*
+   COMMON PROPERTY
+*/
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+button {
+    outline: none;
+}
+
+h1 {
+    font-size: 120px;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+}
+
+h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+/*
+   END OF COMMON PROPERTY
+*/
+
+/*
+   HEADER
+*/
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    z-index: 5;
+    background-color: white;
+    padding-top: 7px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-and-search {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+nav {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    }
+
+.search-form {
+    position: relative;
+}
+
+.search-form .search-field {
+    width: 282px;
+    height: 36px;
+    margin-left: 55px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    color: #767676;
+    border-radius: 4px;
+    box-shadow: none;
+    border: 1px solid #c4c4c4;
+    padding-left: 6px;
+    padding-right: 37px;
+   
+}
+
+.search-btn {
+    position: absolute;   
+    height: 36px;
+    top: 1px;
+    right: 6px;
+    border: none;
+    background-color: transparent;
+
+}
+
+.nav-link {
+    margin-left: 36px;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    border-radius: 4px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+.first-screen .container {
+    position: relative;
+}
+
+/*
+   END OF HEADER
+*/
+
+/*
+   FIRST SCREEN
+*/
+
+
+.first-screen {
+    height: 828px;
+    position: relative;
+    padding-top: 72px;
+    overflow: hidden;
+}
+
+.main-picture {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    height: 756px;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.blackout-main-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.1;
+    padding-top: 72px;
+}
+
+.name-of-courses {
+    position: absolute;
+    top: 105px;
+}
+
+.slogan {
+    font-size: 36px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    line-height: 48px;
+    
+}
+
+.white-button {
+    height: 54px;
+    width: 192px;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 84px;
+    color: #333333;
+}
+
+/*
+   END OF FIRST SCREEN
+*/
+
+/*
+   LIST OF SOFT-SKILLS
+*/
+
+.container-of-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-top: 162px;
+}
+
+.list-and-picture1 {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 72px;
+}
+
+.item-of-list {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.pink-row {
+    display: flex;
+    align-items: center;
+    padding-right: 26px;
+    margin-bottom: 56px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 56px;
+}
+
+.picture1 {
+    padding-top: 33px;
+    padding-bottom: 192px;
+}
+
+/*
+   END OF LIST OF SOFT-SKILLS
+*/
+
+.popular-courses {
+    height: 1008px;
+    position: relative;
+    overflow: hidden;
+}
+
+.purple-section {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 1008px;
+    width: 100%;
+    
+    background: #462E59;
+}
+
+.container-of-popular-courses {
+    position: absolute;
+    top: 174px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-of-popular-courses {
+    display: flex;
+    justify-content: center;
+}
+.cards-of-popular-courses {
+    display: grid;
+    grid-template-columns: 384px 384px 384px;
+    grid-template-rows: 456px;
+    gap: 24px;
+}
+
+.card-of-course {
+    position: relative;
+}
+
+.white-card {
+    color: white;
+    height: 456px;
+    width: 384px;
+    position: absolute;
+}
+
+.text-of-card {
+    position: absolute;
+}
+
+
