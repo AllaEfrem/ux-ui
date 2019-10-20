@@ -44,6 +44,11 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    font-size: 24px;
+    margin: 0
+}
+
 /*
    END OF COMMON PROPERTY
 */
@@ -81,12 +86,13 @@ nav {
 
 .search-form {
     position: relative;
+    margin-left: 55px;
 }
 
 .search-form .search-field {
     width: 282px;
     height: 36px;
-    margin-left: 55px;
+   
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 18px;
     color: #767676;
@@ -160,8 +166,7 @@ nav {
 }
 
 .name-of-courses {
-    position: absolute;
-    top: 105px;
+    padding-top: 105px;
 }
 
 .slogan {
@@ -169,6 +174,7 @@ nav {
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;
     line-height: 48px;
+    margin-top: 24px;
     
 }
 
@@ -213,20 +219,22 @@ nav {
 .item-of-list {
     display: flex;
     flex-direction: row;
+    margin-bottom: 56px;
 }
-
 
 .pink-row {
     display: flex;
     align-items: center;
     padding-right: 26px;
-    margin-bottom: 56px;
+}
+
+.item-of-list:last-child {
+    margin-bottom: 0;
 }
 
 .skill {
     display: flex;
     align-items: center;
-    margin-bottom: 56px;
 }
 
 .picture1 {
@@ -238,33 +246,36 @@ nav {
    END OF LIST OF SOFT-SKILLS
 */
 
+/*
+   POPULAR COURSES
+*/
+
 .popular-courses {
     height: 1008px;
     position: relative;
     overflow: hidden;
-}
-
-.purple-section {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    height: 1008px;
-    width: 100%;
-    
     background: #462E59;
+    width: 100%;
 }
 
 .container-of-popular-courses {
-    position: absolute;
     top: 174px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding-top: 174px;
+
 }
 
 .name-of-popular-courses {
     display: flex;
     justify-content: center;
+    color: white;
+    margin-bottom: 65px;
+   
+
 }
+
 .cards-of-popular-courses {
     display: grid;
     grid-template-columns: 384px 384px 384px;
@@ -273,18 +284,74 @@ nav {
 }
 
 .card-of-course {
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
     position: relative;
+    flex-direction: column;
 }
 
-.white-card {
+
+.label-of-course {
+    height: 40px;
+    width: 140px;
+    background-color: #EF7C97;
     color: white;
-    height: 456px;
-    width: 384px;
-    position: absolute;
+    border-radius: 24px;
+    border: none;
+    margin-top: 32px;
+    margin-left: 26px;
 }
 
-.text-of-card {
-    position: absolute;
+.Name-of-course {
+    line-height: 36px;
+    margin-top: 16px;
+    margin-left: 26px;
+    font-weight: 500;
+   
 }
+
+.time-teacher {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    grid-template-rows: 24px 24px;
+    column-gap: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    position: absolute;
+    top: 222px;
+    left: 38px;
+    align-items: center;
+}
+
+.price {
+    position: absolute;
+    top: 282px;
+    left: 68px;
+    font-size: 36px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    line-height: 36px;
+}
+.container-for-blue-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.blue-btn {
+    position: absolute;
+    bottom: 32px;
+    height: 56px;
+    width: 236px;
+    background-color: #003AB0;
+    color: white;
+    border-radius: 12px;
+    border: none;
+}
+
+/*
+   END OF POPULAR COURSES
+*/
+
 
 
