@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="dz2.css">
+</head>
+
+<body>
+
+
+
+    <form>
+        <h1>Вакансия: Junior Frontend Developer</h1>
+
+        <img src="фото.jpg" alt="Trulli" width="250">
+
+        <p class="name-and-link">
+            <span class="header">Имя:</span>
+            <input type="text" name="Имя" placeholder="ФИО">
+            <br>
+
+            <a href="https://github.com/AllaEfrem/ux-ui" target="_blank">Ссылка на репозиторий в GitHub</a>
+            <br>
+
+            <span class="header">Опыт работы:</span>
+            <input type="text" name="Опыт работы" placeholder="Нет">
+
+        </p>
+        <br>
+        <span class="header">Дата собеседывания:</span>
+        <input type="date">
+
+        <br>
+        <br>
+
+        <span class="header">Уровень английского:</span>
+        <label><input type="radio" name="english_level" value="Плохо"> Плохо</label>
+        <label><input type="radio" name="english_level" value="Средне"> Средне</label>
+        <label><input type="radio" name="english_level" value="Хорошо"> Хорошо</label>
+        <label><input type="radio" name="english_level" value="ПРевосходно"> Превосходно</label>
+
+        <br>
+        <br>
+
+        <span class="header">Ключевые навыки: </span>
+        <ul>
+            <li>HTML</li>
+            <li>CSS/LESS</li>
+            <li>JavaScript</li>
+            <li>...</li>
+        </ul>
+
+        <input type="text" placeholder="Введите навык">
+        <button type="button">Добавить в список</button>
+
+        <br>
+        <br>
+
+        <span class="header">Коммуникабельность:</span>
+        <select>
+            <option value="херово">херово</option>
+            <option value="норм">норм</option>
+            <option value="отлично">отлично</option>
+            <option value="бог!">бог!</option>
+        </select>
+
+        <br>
+        <br>
+
+        <span class="header">Желаемая з/п:</span>
+        <input type="text" placeholder="Введите значение">
+
+        <br>
+        <br>
+
+        <span class="header">Подходит по критериям:</span>
+        <br>
+
+        <label>
+            <input type="checkbox" name="criterion" value="Знание английского"> 
+            Знание английского
+        </label><br>
+        <label><input type="checkbox" name="criterion" value="Оклад"> Оклад</label><br>
+        <label><input type="checkbox" name="criterion" value="Навыки"> Навыки</label><br>
+        <label><input type="checkbox" name="criterion" value="Сразу видно, что свой человек"> Сразу видно, что свой
+            человек</label><br>
+
+        <br>
+
+        <span class="header">Образование, курсы и т.п.:</span>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Сроки обучения</th>
+                    <th>Наименование учебного заведения, курсов</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>72 часа</td>
+                    <td>Повышение квалификации</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>1.09.2019-31.11.2019</td>
+                    <td>Курс level-up</td>
+                <tr>
+                    <td>3</td>
+                    <td>1.09.2019-15.10.2019</td>
+                    <td>Повышение квалификации</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <br>
+
+        <button type="button">Отправить</button>
+
+    </form>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
