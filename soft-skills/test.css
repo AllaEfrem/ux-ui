@@ -567,6 +567,7 @@ nav {
     grid-template-columns: 384px 384px 384px;
     grid-template-rows: 456px;
     gap: 24px;
+    margin-bottom: 35px;
 }
 
 .card-of-review {   
@@ -612,10 +613,127 @@ nav {
     padding: 0px;
 }
 
+.scroll-point-container {
+    display: flex;
+    justify-content: center;
 
+}
 
+.vector-left {
+    margin-right: 27px;
+    cursor: pointer;
+}
+
+.ellipse-scroll {
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.ellipse-scroll-last {
+    margin-right: 0;
+    cursor: pointer;
+}
+
+.vector-right {
+    margin-left: 27px;
+    cursor: pointer;
+}
 
 /*
    END OF THE REVIEWS SECTION
 */
 
+/*
+   FOOTER
+*/
+
+.footer {
+    height: 622px;
+    position: relative;
+    overflow: hidden;
+    background: #000000;
+    opacity: 0.85;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 67px;
+}
+
+.information-container {
+    display: grid;
+    grid-template-columns: 180px 180px 282px 1fr;
+    gap: 24px;
+    color: white;
+    margin-bottom: 66px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+ul:last-child {
+    margin-bottom: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+li a:hover {
+    text-decoration: underline;
+
+}
+
+.information-container h3 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+ul p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+ul span {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    width: 456px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map {
+    position: relative;
+}
+
+.logo-for-map {
+    position: absolute;
+    top: 88px;
+    left: 165px;
+
+}
+
+
+
+
+
+/*
+   END OF FOOTER
+*/
