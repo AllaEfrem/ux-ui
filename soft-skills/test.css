@@ -49,6 +49,58 @@ h3 {
     margin: 0
 }
 
+.white-button {
+    height: 54px;
+    width: 192px;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 84px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.white-button:hover {
+    background-color: #003AB0;
+    color: white;
+}
+
+.blue-btn {
+    display: block;
+    height: 56px;
+    width: 236px;
+    background-color: #003AB0;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 2px 18px 1px rgba(0, 58, 176, 0.61);
+}
+
+.blue-btn:hover {
+    background-color: #3E65B2;
+}
+
+
+
+.white-blue-btn {
+    height: 48px;
+    width: 282px;
+    color: #767676;
+    background-color: white;
+    border: 1px solid #033291;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.white-blue-btn:hover {
+    background-color: #033291;
+    color: white;
+}
+
 /*
    END OF COMMON PROPERTY
 */
@@ -178,16 +230,7 @@ nav {
     
 }
 
-.white-button {
-    height: 54px;
-    width: 192px;
-    font-size: 20px;
-    border: none;
-    background-color: white;
-    border-radius: 4px;
-    margin-top: 84px;
-    color: #333333;
-}
+
 
 /*
    END OF FIRST SCREEN
@@ -337,18 +380,6 @@ nav {
 
 }
 
-.blue-btn {
-    display: block;
-    height: 56px;
-    width: 236px;
-    background-color: #003AB0;
-    color: white;
-    border-radius: 12px;
-    border: none;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .see-all-courses {
     display: flex;
@@ -425,14 +456,7 @@ nav {
     padding-bottom: 62px;
 }
 
-.white-blue-btn {
-    height: 48px;
-    width: 282px;
-    color: #767676;
-    background-color: white;
-    border: 1px solid #033291;
-    border-radius: 4px;
-}
+
 
 
 
@@ -499,9 +523,13 @@ nav {
    THE TEACHER SECTION
 */
 
+
+
 .teacher-section {
     padding-top: 174px;
     padding-bottom: 168px;
+    position: relative;
+    height: 900px;
 }
 
 .teacher-section h2 {
@@ -509,6 +537,106 @@ nav {
     justify-content: center;
     margin-bottom: 87px;
 }
+
+.teacher-cards-container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    
+}
+
+.teacher-card {
+    width: 282px;
+    height: 384px;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+
+.teacher-card:last-child {
+    margin-right: 0px;
+}
+
+
+
+.pink-back {
+    width: 282px;
+    height: 144px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: rgba(239, 124, 151, 0.5);
+    position: absolute;
+    top: 0;
+}
+
+.teacher-photo {
+    position: absolute;
+    top: 89px;
+}
+
+.teacher-card h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+
+
+.about-teacher {
+    margin-top: 24px;
+    padding-bottom: 43px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.big-teacher-card {
+    width: 282px;
+    height: 432px;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    position: relative;
+    top: -24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+
+.big-teacher-card h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.big-teacher-card .about-teacher {
+    margin-top: 24px;
+    padding-bottom: 36px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.big-teacher-card .white-blue-btn {
+    width: 185px;
+    margin-bottom: 24px;
+}
+
+
+
 
 
 /*
@@ -592,11 +720,25 @@ nav {
     margin-bottom: 6px;
 }
 
-.review-text {
+
+
+.review-text p {
     font-size: 16px;
     line-height: 24px;
-    height: 245px;
+    overflow-y: hidden;
+    padding-right: 24px;
+    height: 210px;
     
+}
+
+.gradient-white-back {
+    width: 336px;
+    height: 82px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    position: absolute;
+    bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -717,6 +859,7 @@ ul span {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 
 .map {

@@ -1,0 +1,324 @@
+/*
+    COMMON-STYLES
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.green-button {
+    width: 170px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    color: white;
+    background-color: #A0D334;
+    border: none;
+    font-size: 14px;
+}
+
+.green-button:hover {
+    background-color: #aedf48;
+}
+
+.with-top-triangle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
+    background-color: white;
+    z-index: 1;
+    height: 13.625vw;
+}
+
+.with-bottom-triangle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    clip-path: polygon(100% calc(100% - 13.625vw), 100% 13.625vw, 100% 100%, 0% 100%);
+    background-color: white;
+    z-index: 1;
+    height: 13.625vw;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/*
+    END OF COMMON-STYLES
+*/
+
+/*
+    HEADER
+*/
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 530px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.contact-me-btn {
+    width: 170px;
+    height: 55px;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 53px;
+    background-color: transparent;
+    font-size: 14px;
+    color: white;
+    transition: background-color .3s ease-in-out;
+}
+
+.contact-me-btn:hover {
+    background-color: rgba(255, 255, 255, .4);
+}
+
+/*
+    END OF HEADER
+*/
+
+footer {
+    height: 473px;
+    padding-top: 60px;
+    background: linear-gradient(45deg, #7A39DB, #6048FF);
+}
+
+.awesome-cbx {
+    font-size: 20px;
+}
+
+.awesome-cbx input {
+    display: none;
+}
+
+.awesome-cbx span {
+    display: flex;
+    align-items: center;
+}
+
+.awesome-cbx span::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid yellow;
+    background-color: white;
+    margin-right: 8px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.awesome-cbx input:checked + span::before {
+    content: '+';
+    background-color: lightgreen;
+}
+
+.hamburger {
+    display: none;
+}
+
+/*   MOBILE   */
+
+@media (max-width: 900px) {
+    /*   BURGER   */
+
+    /*!
+    * Hamburgers
+    * @description Tasty CSS-animated hamburgers
+    * @author Jonathan Suh @jonsuh
+    * @site https://jonsuh.com/hamburgers
+    * @link https://github.com/jonsuh/hamburgers
+    */
+    .hamburger {
+        padding: 15px 15px;
+        display: inline-block;
+        cursor: pointer;
+        transition-property: opacity, filter;
+        transition-duration: 0.15s;
+        transition-timing-function: linear;
+        font: inherit;
+        color: inherit;
+        text-transform: none;
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        overflow: visible; }
+        .hamburger:hover {
+        opacity: 0.7; }
+        .hamburger.is-active:hover {
+        opacity: 0.7; }
+        .hamburger.is-active .hamburger-inner,
+        .hamburger.is-active .hamburger-inner::before,
+        .hamburger.is-active .hamburger-inner::after {
+        background-color: #fff; }
+    
+    .hamburger-box {
+        width: 40px;
+        height: 24px;
+        display: inline-block;
+        position: relative; }
+    
+    .hamburger-inner {
+        display: block;
+        top: 50%;
+        margin-top: -2px; }
+        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        width: 40px;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 4px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease; }
+        .hamburger-inner::before, .hamburger-inner::after {
+        content: "";
+        display: block; }
+        .hamburger-inner::before {
+        top: -10px; }
+        .hamburger-inner::after {
+        bottom: -10px; }
+
+    /*
+        * Emphatic
+        */
+    .hamburger--emphatic {
+        overflow: hidden; }
+        .hamburger--emphatic .hamburger-inner {
+        transition: background-color 0.125s 0.175s ease-in; }
+        .hamburger--emphatic .hamburger-inner::before {
+            left: 0;
+            transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in; }
+        .hamburger--emphatic .hamburger-inner::after {
+            top: 10px;
+            right: 0;
+            transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in; }
+        .hamburger--emphatic.is-active .hamburger-inner {
+        transition-delay: 0s;
+        transition-timing-function: ease-out;
+        background-color: transparent !important; }
+        .hamburger--emphatic.is-active .hamburger-inner::before {
+            left: -80px;
+            top: -80px;
+            transform: translate3d(80px, 80px, 0) rotate(45deg);
+            transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
+        .hamburger--emphatic.is-active .hamburger-inner::after {
+            right: -80px;
+            top: -80px;
+            transform: translate3d(-80px, 80px, 0) rotate(-45deg);
+            transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    
+    
+    header {
+        background-color: #673ab7c9;
+    }
+
+    .container {
+        max-width: 92vw;
+    }
+    
+    header .container {
+        height: 58px;
+    }
+
+    header img {
+        margin-left: 50px;
+        position: relative;
+        top: -3px;
+    }
+
+    nav {
+        position: absolute;
+        left: 0;
+        flex-direction: column;
+        width: auto;
+        padding: 15px 30px;
+        top: 100%;
+        transition: transform .4s ease-in-out;
+        transform: translateX(-100%);
+        background-color: #673ab7c9;
+    }
+
+    .nav-link {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .nav-link:last-child {
+        margin-bottom: 0;
+    }
+
+    #burger {
+        position: absolute;
+        left: 0;
+    }
+
+    #burger.is-active ~ nav {
+        transform: translateX(0);
+    }
+
+    .contact-me-btn {
+        width: 120px;
+        height: 34px;
+        line-height: 34px;
+    }
+}

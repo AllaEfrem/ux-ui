@@ -1,0 +1,474 @@
+/*
+    FIRST SCREEN
+*/
+
+.first-screen {
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+.first-section-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 900px;
+    object-fit: cover;
+}
+
+.gradient-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #7A39DB, #6048FF);
+    opacity: .6;
+}
+
+.first-screen .container {
+    position: relative;
+}
+
+.about-me {
+    position: absolute;
+    top: 310px;
+    right: 87px;
+}
+
+.about-me .common-text {
+    font-size: 20px;
+    color: white;
+    padding-left: 5px;
+}
+
+.get-started-btn {
+    margin-top: 60px;
+}
+
+.rotated-back {
+    position: absolute;
+    bottom: -144px;
+    right: -20px;
+    transform: rotateZ(-7deg);
+    width: 113%;
+    background-color: white;
+    height: 220px;
+}
+
+/*
+    END OF FIRST SCREEN
+*/
+
+/*
+    SERVICES
+*/
+
+.services-section {
+    padding-top: 33px;
+    padding-bottom: 71px;
+}
+
+.services-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services-about {
+    width: 365px;
+}
+
+.services-about p {
+    color: #6e6e6e;
+    margin-top: 17px;
+    margin-bottom: 47px;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.service-cards-container {
+    display: grid;
+    grid-template-columns: 338px 338px;
+    grid-template-rows: 175px 175px;
+    gap: 30px;
+}
+
+.service-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 30px rgba(172, 172, 172, .16);
+}
+
+.icon-and-title {
+    display: flex;
+    align-items: center;
+}
+
+.icon-and-title .icon-container {
+    flex-shrink: 0;
+    width: 55px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #6e6e6e;
+    line-height: 27px;
+    margin: 0;
+    padding-left: 55px;
+}
+
+/*
+    END OF SERVICES
+*/
+
+/*
+    MY STORY
+*/
+
+.my-story-section {
+    height: 875px;
+    position: relative;
+    overflow: hidden;
+}
+
+.my-story-section-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 900px;
+    object-fit: cover;
+}
+
+.my-story-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.watch-button-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.watch-button {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    margin-bottom: 35px;
+}
+
+.watch-icon {
+    position: relative;
+    left: 4px;
+}
+
+.watch-button-container h2 {
+    color: white;
+}
+
+/*
+    END OF MY STORY
+*/
+
+/*
+    MY SKILLS
+*/
+
+.my-skills-section {
+    padding-top: 5px;
+    padding-bottom: 68px;
+}
+
+.my-skills-section .container {
+    text-align: center;
+}
+
+.my-skills-section p {
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    line-height: 27px;
+}
+
+.skills-container {
+    display: grid;
+    margin-left: -30px;
+    margin-right: -30px;
+    justify-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(5, 230px);
+}
+
+.skill-chart {
+    width: 230px;
+    height: 230px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #4a4a4a;
+    position: relative;
+    text-align: center;
+    line-height: 230px;
+}
+
+.skill-chart-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skill-chart-progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.skill-chart-progress.cropped {
+    left: calc(50% + 6px);
+}
+
+.skill-name {
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+/*
+    END OF MY SKILLS
+*/
+
+/*
+    MY PORTFOLIO
+*/
+
+.portfolio-section {
+    padding-top: 221px;
+    padding-bottom: 288px;
+    background-color: #FAFAFF;
+    position: relative;
+}
+
+.portfolio-section .container {
+    text-align: center;
+}
+
+.portfolio-section p {
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 27px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.tabs-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-item {
+    margin-right: 27px;
+    font-weight: 500;
+    color: #4a4a4a;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-item:hover,
+.tab-item.active {
+    color: #A0D334;
+}
+
+.tab-item.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 43px;
+    border-bottom: 1px solid #A0D334;
+}
+
+.tab-item:last-child {
+    margin-right: 0;
+}
+
+.tab-content {
+    margin-top: 95px;
+}
+
+.web-design-content {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    gap: 30px;
+    grid-template-rows: 250px 120px 250px;
+}
+
+.web-design-content .grid-item {
+    position: relative;
+}
+
+.web-design-content .grid-item:first-child,
+.web-design-content .grid-item:nth-child(3),
+.web-design-content .grid-item:nth-child(4) {
+    grid-row: span 2;
+}
+
+.grid-item-background {
+    position: absolute;
+    background-color: #6048FF;
+    opacity: .3;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*
+    END OF MY PORTFOLIO
+*/
+
+/*   WHAT MY CLIENTS SAY */
+
+.clients-say .container {
+    text-align: center;
+}
+
+.clients-say .section-description {
+    margin: 20px 0 0 0;
+    color: #4A4A4A;
+    line-height: 27px;
+}
+
+.clients-say .responses-wrapper-wrapper {
+    position: relative;
+}
+
+.clients-say .responses-wrapper {
+    overflow: hidden;
+    padding-top: 64px;
+    padding-bottom: 175px;
+}
+
+.clients-say .responses-container {
+    transition: all .7s;
+}
+
+.clients-say .response-item {
+    width: 370px;
+    height: 222px;
+    color: #6E6E6E;
+    padding: 30px 30px 35px 30px;
+    box-shadow: 0 0 30px rgba(172, 172, 172, .16);
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+.clients-say .response-item p {
+    line-height: 19px;
+    font-size: 14px;
+    margin: 0;
+    text-align: left;
+}
+
+.response-item .author-info {
+    margin-top: 23px;
+    align-items: center;
+}
+
+.response-item .author-img {
+    margin-right: 17px;
+}
+
+.name-and-position {
+    text-align: left;
+}
+
+.response-item .name {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4A4A4A;
+}
+
+.responses-wrapper .slide-buttons-container {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.responses-wrapper .slide-button {
+    width: 36px;
+    height: 5px;
+    background-color: #A0D334;
+    border-radius: 10px;
+    border: none;
+    opacity: 0.15;
+    margin-right: 22px;
+    position: relative;
+}
+
+.responses-wrapper .slide-button.active,
+.responses-wrapper .slide-button:hover {
+    opacity: 1;
+}
+
+.responses-wrapper .slide-button:last-child {
+    margin-right: 0;
+}
+
+.responses-wrapper .slide-button:before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*   END OF WHAT MY CLIENTS SAY   */
+
+/*   MOBILE   */
+
+@media (max-width: 900px) {
+
+    .first-screen {
+        height: 100vh;
+    }
+
+    .first-screen .container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        top: 13vh;
+    }
+
+    .first-section-back {
+        height: 100vh;
+        object-position: 28% 58px;
+    }
+
+    .about-me img {
+        width: 90vw;
+    }
+
+    .service-cards-container {
+        display: none;
+    }
+
+    .skills-container {
+        display: none;
+    }
+    .web-design-content {
+        display: none;
+    }
+}
