@@ -457,18 +457,125 @@
         object-position: 28% 58px;
     }
 
+    .about-me {
+        position: static;
+    }
+
     .about-me img {
         width: 90vw;
     }
 
+    .services-section .container {
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 100px;
+    }
+
+    .services-section .green-button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .service-cards-container {
-        display: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: unset;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+
+    .my-skills-section {
+        padding-top: 50px;
+        overflow: hidden;
     }
 
     .skills-container {
-        display: none;
+        grid-template-columns: repeat(2, 200px);
     }
+
+    .skill-chart,
+    .skill-chart-back {
+        width: 200px;
+        height: 200px;
+    }
+
+    .skill-chart {
+        line-height: 200px;
+        margin-bottom: -14px;
+    }
+
+    .skill-chart-progress.cropped {
+        width: auto;
+    }
+    
+    .skill-chart-progress {
+        width: 130px;
+        height: 130px;
+    }
+
+    .skill-chart:nth-child(odd),
+    .skill-name:nth-child(even) {
+        margin-right: -20px;
+    }
+
+    .skill-chart:nth-child(even),
+    .skill-name:nth-child(odd) {
+        margin-left: -20px;
+    }
+
+    .mobile-first-row {
+        grid-row: 2/3;
+    }
+
+    .mobile-second-row {
+        grid-row: 4/5;
+    }
+
+    .mobile-third-row {
+        grid-row: 6/7;
+    }
+
+    .portfolio-section {
+        padding-top: 100px;
+    }
+
+    .tabs-container {
+        flex-direction: column;
+    }
+
+    .tab-item {
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .tab-item.active::after {
+        content: unset;
+    }
+
+    .tab-content {
+        margin-top: 35px;
+        overflow: hidden;
+    }
+
     .web-design-content {
-        display: none;
+        grid-template-columns: repeat(6, 100%);
+        grid-template-rows: 400px;
+    }
+
+    .web-design-content .grid-item:first-child, 
+    .web-design-content .grid-item:nth-child(3), 
+    .web-design-content .grid-item:nth-child(4) {
+        grid-row: unset;
+    }
+
+    .web-design-content .grid-item img {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
     }
 }

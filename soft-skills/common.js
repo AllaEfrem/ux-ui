@@ -1,15 +1,4 @@
-let isBurgerClicked = false;
 let isModalVisible = false;
-
-function burgerClick() {
-    if (isBurgerClicked) {
-        burger.classList.remove("is-active");
-    } else {
-        burger.classList.add("is-active");
-    }
-
-    isBurgerClicked = !isBurgerClicked;
-}
 
 function modalToggle() {
     if (isModalVisible) {  // здесь проверяется условие видимости модалки

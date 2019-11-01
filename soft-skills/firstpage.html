@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600|Open+Sans:400,600&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="firstpage.css">
+</head>
+
+<body>
+    <div id="modal" class="modal" onclick="modalToggle()">
+        <div class="modal-inner" onclick="modalInnerClick(event)">
+            <div class="modal-header">
+                <h3>Запись на курс</h3>
+            </div>
+            <div class="modal-body">
+                <form class="form-modal-body">
+                    <h4>Стоимость курса</h4>
+                    <h3>35 000 ₽</h3>
+                    <div class="input-line">
+                        <label for="Course-name">Название курса</label>
+                        <input type="text" id="Course-name" name="Course-name" placeholder="Выберите курс">
+                    </div>
+                    <div class="input-radio">
+                        <div>Форма обучения</div>
+                        <label class="mb-16">
+                            <input type="radio" name="Education-form" value="Education-form" checked>
+                            <span>Очная</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="Education-form" value="Education-form">
+                            <span>Заочная</span>
+                        </label><br>
+                    </div>
+                    <div class="input-line">
+                        <label for="Course-date">Даты курса</label>
+                        <input type="text" id="Course-date" name="Course-date" placeholder="Выберите интервал">
+                    </div>
+                    <div class="input-line">
+                        <label for="Persona-date">ФИО</label>
+                        <input type="text" id="Persona-date" name="Persona-date" placeholder="Введите ФИО">
+                    </div>
+                    <div class="input-line">
+                        <label for="Telephon-number">Телефон</label>
+                        <input type="text" id="Telephon-number" name="Telephon-number" placeholder="+7(___)-__-__">
+                    </div>
+                    <div class="input-line">
+                        <label for="E-mail-adress">E-mail</label>
+                        <input type="text" id="E-mail-adress" name="E-mail-adress" placeholder="E-mail">
+                    </div>
+                    <div class="input-radio">
+                        <div>Форма оплаты</div>
+                        <label class="mb-16">
+                            <input type="radio" id="pay-form" name="pay-form" value="Education-form" checked>
+                            <span>Наличная</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="pay-form" name="pay-form" value="Education-form">
+                            <span>Безналичная
+                                (банковская
+                                карта, на счет организации, PayPal, яндекс-деньги и др.)</span><br>
+                        </label>
+                    </div>
+                    <div class="input-checkbox">
+                        <label>
+                            <input type="checkbox" id="checkbox" name="checkbox">
+                            <span> Вы подтверждаете своё согласие с условиями
+                                предоставления услуг и политикой конфиденциальности</span>
+                        </label>
+                    </div>
+
+                </form>
+                <div class="buttons">
+                    <button class="blue-btn">Записаться на курс</button>
+                    <button class="white-blue-btn">Побробнее</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <a href="firstpage.html"><img src="./Logo.png" alt="Logo"></a>
+
+            <div class="nav-and-search">
+                <nav>
+                    <a href="" class="nav-link">О нас</a>
+                    <a href="coursespage.html" class="nav-link">Курсы</a>
+                    <a href="" class="nav-link">Новости и акции</a>
+                    <a href="" class="nav-link">Контакты</a>
+                </nav>
+                <form class="search-form">
+                    <input type="text" name="" placeholder="Поиск" class="search-field" />
+                    <button class="search-btn" type="button">
+                        <img src="./Search.svg" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="first-screen">
+        <img class="main-picture" src="./main-picture.jpg" alt="главный фон">
+        <div class="blackout-main-picture"></div>
+        <div class="container">
+            <div class="name-of-courses">
+                <div class="Школа-Soft-Skills">
+                    <h1>Школа
+                        <br>
+                        Soft-Skills
+                    </h1>
+                    <div class="slogan">
+                        Улучшим твои навыки,
+                        <br>
+                        которые пригодятся везде
+                    </div>
+                    <button class="white-button" onclick="modalToggle()">Записаться</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="list-of-soft-skills">
+        <div class="container">
+            <div class="container-of-list"></div>
+            <div class="Name-of-list">
+                <h2>Навыки Soft-Skills</h2>
+            </div>
+            <div class="list-and-picture1">
+                <div class="list">
+                    <div class="item-of-list">
+                        <div class="pink-row">
+                            <img src="./arrow-pointing-to-right.svg" alt="">
+                        </div>
+                        <div class="skill">
+                            <p>Слушать собеседника, вести диалог и переписку, аргументированно отстаивать свою точку
+                                зрения, задавать вопросы</p>
+                        </div>
+                    </div>
+                    <div class="item-of-list">
+                        <div class="pink-row">
+                            <img src="./arrow-pointing-to-right.svg" alt="">
+                        </div>
+                        <div class="skill">
+                            <p>Общаться с представителями разных специальностей, социальных и культурных групп</p>
+                        </div>
+                    </div>
+                    <div class="item-of-list">
+                        <div class="pink-row">
+                            <img src="./arrow-pointing-to-right.svg" alt="">
+                        </div>
+                        <div class="skill">
+                            <p>Формировать команду, ставить цели, проявлять инициативу и делегировать обязанности</p>
+                        </div>
+                    </div>
+                    <div class="item-of-list">
+                        <div class="pink-row">
+                            <img src="./arrow-pointing-to-right.svg" alt="">
+                        </div>
+                        <div class="skill">
+                            <p>Понимать поставленную задачу — что, как и зачем нужно делать</p>
+                        </div>
+                    </div>
+                    <div class="item-of-list">
+                        <div class="pink-row">
+                            <img src="./arrow-pointing-to-right.svg" alt="">
+                        </div>
+                        <div class="skill">
+                            <p>Делиться soft-skills с коллегами</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture1">
+                    <img src="./Picture 1 Discussion.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-courses">
+        <div class="container">
+            <div class="container-of-popular-courses">
+                <h2 class="name-of-popular-courses">Популярные курсы</h2>
+                <div class="cards-of-popular-courses">
+                    <div class="card-of-course">
+                        <button class="label-of-course">Коммуникация</button>
+                        <h3 class="Name-of-course">Эффективные переговоры</h3>
+                        <div class="time-teacher">
+                            <img src="./clock.svg" alt="">
+                            <span>1 ноября – 31 декабря</span>
+                            <img src="./graduation.svg" alt="">
+                            <span>Александров Михаил</span>
+                        </div>
+                        <div class="price">35 000 ₽</div>
+                        <button class="blue-btn">Записаться на курс</button>
+                    </div>
+
+                    <div class="card-of-course">
+                        <button class="label-of-course">Лидерство, команда</button>
+                        <h3 class="Name-of-course">Проведение собраний и совещаний</h3>
+                        <div class="time-teacher">
+                            <img src="./clock.svg" alt="">
+                            <span>14 ноября – 25 декабря</span>
+                            <img src="./graduation.svg" alt="">
+                            <span>Иванова Светлана</span>
+                        </div>
+                        <div class="price">24 000 ₽</div>
+
+                        <button class="blue-btn">Записаться на курс</button>
+
+                    </div>
+
+                    <div class="card-of-course">
+                        <button class="label-of-course">Развитие личности</button>
+                        <h3 class="Name-of-course">Развитие новых граней личности</h3>
+                        <div class="time-teacher">
+                            <img src="./clock.svg" alt="">
+                            <span>1 ноября – 31 декабря</span>
+                            <img src="./graduation.svg" alt="">
+                            <span>Алексеев Владислав</span>
+                        </div>
+                        <div class="price">35 000 ₽</div>
+
+                        <button class="blue-btn">Записаться на курс</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="see-all-courses">
+                <h3 class="text-see-all-courses">Посмотреть все курсы</h3>
+                <img class="vector" src="./Vector.svg" alt="">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="promotions-section">
+        <div class="container">
+            <div class="promotions-grid">
+                <img src="./PIcture 2 Conversation.svg" alt="">
+                <div class="card-of-promotion">
+                    <h2 class="promo-1">Приведи друга - <br>
+                        получи скидку 10% на <br>
+                        курс</h2>
+                    <span>1 сентября - 31 декабря</span>
+                    <button class="white-blue-btn">Подробнее</button>
+                </div>
+                <div class="card-of-promotion">
+                    <h2 class="promo-2">Весь октябрь скидки на популярные курсы</h2>
+                    <span>1 октября - 31 октября</span>
+                    <button class="white-blue-btn">Подробнее</button>
+                </div>
+                <img src="./Picture 3 Welcome Screen.svg" alt="">
+                <img class="picture-4" src="./Picture 4 Order Confirmed.svg" alt="">
+                <div class="card-of-promotion">
+                    <h2 class="promo-3">Скидка 15% на курс месяца</h2>
+                    <span>1 сентября - 30 сентября</span>
+                    <button class="white-blue-btn">Подробнее</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="the-best-section">
+        <div class="container">
+            <h2>Почему мы лучшие</h2>
+            <div class="container-for-icons-and-text">
+                <div class="icon-and-text">
+                    <div class="icon-container">
+                        <img class="ellipse-for-icon" src="./Ellipse for icon.svg" alt="">
+                        <img class="icon" src="./icon 1 Vector.svg" alt="">
+                    </div>
+                    <div class="text-for-icon">
+                        <p>Более 30 дисциплин <br>
+                            от профессионалов в <br>
+                            своей области</p>
+                    </div>
+                </div>
+                <div class="icon-and-text">
+                    <div class="icon-container">
+                        <img class="ellipse-for-icon" src="./Ellipse for icon.svg" alt="">
+                        <img class="icon" src="./icon 2 Vector.svg" alt="">
+                    </div>
+                    <div class="text-for-icon">
+                        <p>Свыше 50 компаний<br>
+                            и более 1000<br>
+                            выпускников</p>
+                    </div>
+                </div>
+                <div class="icon-and-text">
+                    <div class="icon-container">
+                        <img class="ellipse-for-icon" src="./Ellipse for icon.svg" alt="">
+                        <img class="icon" src="./icon 3 Vector.svg" alt="">
+                    </div>
+                    <div class="text-for-icon">
+                        <p>Удаленное обучение<br>
+                            из любой точки<br>
+                            мира</p>
+                    </div>
+                </div>
+                <div class="icon-and-text">
+                    <div class="icon-container">
+                        <img class="ellipse-for-icon" src="./Ellipse for icon.svg" alt="">
+                        <img class="icon" src="./icon 4 Vector.svg" alt="">
+                    </div>
+                    <div class="text-for-icon">
+                        <p>Убодное время занятий<br>
+                            для совмещения<br>
+                            с работой</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="teacher-section">
+
+        <h2>Наши преподаватели</h2>
+        <div class="teacher-cards-container">
+            <div class="teacher-card">
+                <div class="pink-back"></div>
+                <img class="teacher-photo" src="./teacher1.png" alt="">
+                <h3>Волкова Надежда</h3>
+                <div class="about-teacher">Специалист в сфере<br>психологии</div>
+            </div>
+            <div class="teacher-card">
+                <div class="pink-back"></div>
+                <img class="teacher-photo" src="./teacher2.png" alt="">
+                <h3>Александров Борис</h3>
+                <div class="about-teacher">Специалист в сфере<br>психологии</div>
+            </div>
+            <div class="big-teacher-card">
+                <div class="pink-back"></div>
+                <img class="teacher-photo" src="./teacher3.png" alt="">
+                <h3>Жданова Виолетта</h3>
+                <div class="about-teacher">Специалист в сфере<br>менеджмента</div>
+                <button class="white-blue-btn">Подробнее</button>
+            </div>
+            <div class="teacher-card">
+                <div class="pink-back"></div>
+                <img class="teacher-photo" src="./teacher4.png" alt="">
+                <h3>Лисицина Алиса</h3>
+                <div class="about-teacher">Специалист в сфере<br>психологии</div>
+            </div>
+            <div class="teacher-card">
+                <div class="pink-back"></div>
+                <img class="teacher-photo" src="./teacher5.png" alt="">
+                <h3>Ефременков Антон</h3>
+                <div class="about-teacher">Специалист в сфере<br>психологии</div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="reviews-section">
+        <div class="container">
+            <h2>Отзывы наших учеников</h2>
+            <div class="video-container">
+                <img class="video-review" src="./video-reviews.jpg" alt="">
+                <div class="blackout-video-reviews"></div>
+                <img class="youtube-icon" src="./youtube.svg" alt="">
+            </div>
+            <div class="reviews-container">
+                <div class="card-of-review">
+                    <button class="label-of-course">Коммуникация</button>
+                    <h3 class="Name-of-student">Дмитриев Михаил</h3>
+                    <div class="stars-container">
+                        <img src="./Star-blue.svg" alt="">
+                        <img src="./Star-blue.svg" alt="">
+                        <img src="./Star-blue.svg" alt="">
+                        <img src="./Star-blue.svg" alt="">
+                        <img src="./Star-not-blue.svg" alt="">
+                    </div>
+                    <div class="review-text">
+                        <p>
+                            Курс очень понравился: хорошая организация, лекторы передавали информацию просто и понятно,
+                            в формате беседы. Понравились интерактивы, задания были интересные и необычные. Благодаря
+                            лекторам атмосфера в аудитории получилась легкой и непринужденной
+                        </p>
+                        <div class="gradient-white-back"></div>
+
+                    </div>
+                    <button class="continue-reading-btn">Продолжить чтение</button>
+                </div>
+
+                <div class="card-of-review">
+                    <button class="label-of-course">Развитие личности</button>
+                    <h3 class="Name-of-student">Тихонов Евгений</h3>
+                    <div class="stars-container">
+                        <img src="./Star-blue.svg" alt="">
+                        <img src="./Star-blue.svg" alt="">
+                        <img src="./Star-blue.svg" alt="">
+                        <img src="./Star-blue.svg" alt="">
+                        <img src="./Star-blue.svg" alt="">
+                    </div>
+                    <div class="review-text">
+                        <p>
+                            Информативный курс с комфортной подачей материала. Очень полезными были примеры из реального
+                            опыта ведения бизнеса в различных отраслях. Самое главное, что полученная информация может
+                            быть применена на практике, а для дальнейшего изучения темы были заданы направления для
+                            поиска данных.
+                        </p>
+                        <div class="gradient-white-back"></div>
+
+                    </div>
+                    <button class="continue-reading-btn">Продолжить чтение</button>
+                </div>
+
+                <div class="card-of-review">
+                    <button class="label-of-course">Развитие личности</button>
+                    <h3 class="Name-of-student">Михалина Катерина</h3>
+                    <div class="stars-container">
+                        <img src="./Star-blue.svg" alt="">
+                        <img src="./Star-blue.svg" alt="">
+                        <img src="./Star-blue.svg" alt="">
+                        <img src="./Star-blue.svg" alt="">
+                        <img src="./Star-blue.svg" alt="">
+                    </div>
+                    <div class="review-text">
+                        <p>
+                            Курс очень понравился. Информация доведена до слушателей доступным языком с использованием
+                            современной литературы и примеров. Семинар ориентирован на современный бизнес. Информация
+                            актуальна. Раздаточный материал изложен доступным и понятным языком. Огромное спасибо!
+                        </p>
+                        <div class="gradient-white-back"></div>
+
+                    </div>
+                    <button class="continue-reading-btn">Продолжить чтение</button>
+                </div>
+            </div>
+            <div class="scroll-point-container">
+                <img class="vector-left" src="./Vector (Stroke) left.svg" alt="">
+                <img class="ellipse-scroll" src="./Ellipse white.svg" alt="">
+                <img class="ellipse-scroll" src="./Ellipse dark.svg" alt="">
+                <img class="ellipse-scroll" src="./Ellipse dark.svg" alt="">
+                <img class="ellipse-scroll" src="./Ellipse dark.svg" alt="">
+                <img class="ellipse-scroll-last" src="./Ellipse dark.svg" alt="">
+                <img class="vector-right" src="./Vector (Stroke) right.svg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="information-container">
+                <div class="column1">
+                    <h3>О школе</h3>
+                    <ul class="list-1-1">
+                        <li>
+                            <a href="">О нас</a>
+                        </li>
+                        <li>
+                            <a href="">Курсы</a>
+                        </li>
+                        <li>
+                            <a href="">Расписание</a>
+                        </li>
+                        <li>
+                            <a href="">Новости и акции</a>
+                        </li>
+                        <li>
+                            <a href="">Отзывы</a>
+                        </li>
+                    </ul>
+                    <ul class="list-1-2">
+                        <li>
+                            <a href="">Препадаватели</a>
+                        </li>
+                        <li>
+                            <a href="">Вакансии</a>
+                        </li>
+                    </ul>
+                    <ul class="list-1-3">
+                        <li>
+                            <a href="">Организациям</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column2">
+                    <h3>Курсы</h3>
+                    <ul class="list-2-1">
+                        <li>
+                            <a href="">Все</a>
+                        </li>
+                        <li>
+                            <a href="">Лидерство и команда</a>
+                        </li>
+                        <li>
+                            <a href="">Коммуникации</a>
+                        </li>
+                        <li>
+                            <a href="">Упавление собой</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column-3">
+                    <h3>Контакты</h3>
+                    <ul class="list-3-1">
+                        <span>Адрес</span>
+                        <p>
+                            191025, г.Санкт-Петербург,<br>
+                            Неский пр., д.104, БЦ Tempo,<br>
+                            литера 6, этаж 4
+                        </p>
+                        <span>Телефон</span>
+                        <p>
+                            8(812)320-13-03<br>
+                            8(812)925-11-08
+                        </p>
+                    </ul>
+                </div>
+                <div class="map">
+                    <img src="./map.jpg" alt="">
+                    <img class="logo-for-map" src="./logo-for-map.svg" alt="">
+                </div>
+            </div>
+            <div class="social-icons">
+                <img src="./Tilda_Icons_26sn_facebook.svg" alt="">
+                <img src="./Tilda_Icons_26sn_instagram.svg" alt="">
+                <img src="./Layer 9.svg" alt="">
+                <img src="./Tilda_Icons_26sn_vkontakte.svg" alt="">
+                <img src="./icon-youtube.svg" alt="">
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+    <script src="./common.js"></script>
+</body>
+
+</html>

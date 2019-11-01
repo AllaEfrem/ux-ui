@@ -78,6 +78,30 @@ h3 {
     display: flex;
 }
 
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 6;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-inner {
+    position: absolute;
+    top: 80px;
+    width: 40vw;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal.visible {
+    display: block;
+}
+
 /*
     END OF COMMON-STYLES
 */

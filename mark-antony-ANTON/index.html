@@ -12,6 +12,16 @@
 </head>
 
 <body>
+    <div id="modal" class="modal" onclick="modalToggle()">
+        <div class="modal-inner" onclick="modalInnerClick(event)">
+            <p>modal works</p>
+
+            <button class="modal-close-btn" onclick="modalToggle()">Изыди</button>
+            <p>
+                <button>Send</button>
+            </p>
+        </div>
+    </div>
     <header>
         <div class="container">
             <button id="burger" class="hamburger hamburger--emphatic" onclick="burgerClick()">
@@ -28,7 +38,7 @@
                 <a href="" class="nav-link">Portfolio</a>
                 <a href="" class="nav-link">Reviews</a>
             </nav>
-            <button class="contact-me-btn">Contact Me</button>
+            <button class="contact-me-btn" onclick="modalToggle()" title="Ткни, модалку увидеть чтоб">Contact Me</button>
         </div>
     </header>
     <section class="first-screen with-bottom-triangle">
@@ -146,11 +156,11 @@
                     <img class="skill-chart-progress" src="./img/progress5.png">
                     <span>85%</span>
                 </div>
-                <div class="skill-name">Adobe xd</div>
-                <div class="skill-name">Adobe Illustrator</div>
-                <div class="skill-name">Adobe Photoshop</div>
-                <div class="skill-name">Adobe Indesign</div>
-                <div class="skill-name">Adobe After Effects</div>
+                <div class="skill-name mobile-first-row">Adobe xd</div>
+                <div class="skill-name mobile-first-row">Adobe Illustrator</div>
+                <div class="skill-name mobile-second-row">Adobe Photoshop</div>
+                <div class="skill-name mobile-second-row">Adobe Indesign</div>
+                <div class="skill-name mobile-third-row">Adobe After Effects</div>
             </div>
         </div>
     </section>
